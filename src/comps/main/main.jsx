@@ -28,7 +28,7 @@ export default function Main(props) {
     }
 
     try {
-      await fetch(`http://api.weatherapi.com/v1/search.json?key=8c797274edce4c5085f190353222504&q=${request}`)
+      await fetch(`https://api.weatherapi.com/v1/search.json?key=8c797274edce4c5085f190353222504&q=${request}`)
             .then(res => {
               return res.json()
             }).then(data => {
