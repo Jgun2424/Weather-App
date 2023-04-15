@@ -3,7 +3,6 @@ import classes from './main.module.css'
 import { Icon } from '@iconify/react';
 import moment from 'moment';
 import Results from './Results';
-import LoadingState from '../loading/LoadingState';
 
 export default function Main(props) {
 
