@@ -1,0 +1,275 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 15px;
+    margin-left: 20px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+}
+
+
+.welcomeUser {
+    line-height: 34px;
+    flex-grow: 1;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.searchBar {
+    position: relative;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 15px;
+    width: 280px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+.searchResults {
+    transition: all .5s;
+    top: 0px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #f5f5f5;
+    width: 280px;
+    padding: 10px;
+}
+
+.results {
+    transition: all .3s;
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.results:first-child {
+    margin-top: 0px;
+}
+
+.results:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.icon {
+    position: absolute;
+    right: 20px;
+    font-size: 23px;
+    color: #f9822e;
+    z-index: 3;
+}
+
+.notifs {
+    font-size: 20px;
+    color: #717394;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    border: 1px solid #e2e5eb;
+    padding: 5px;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+}
+
+
+.weather {
+    margin-top:40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.top {
+    color: #19283f;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.weatherIcon {
+    font-size: 24px;
+    color: #ffa361;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    background-color: white;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.weatherTemp {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.dailyLow {
+    margin-left: 20px;
+    background-color: white;
+    padding: 7px 13px;
+    border-radius: 10px;
+}
+
+.innerTemp {
+    display: flex;
+    align-items: center;
+}
+
+.weatherGrid {
+    margin-top: 5px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 15px;
+}
+
+.weatherItem {
+    color:white;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    height: 96px;
+}
+
+.weatherItem2 {
+    flex-direction: row;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.progress {
+    transition: all .3s;
+    position: relative;
+    background-color: #dfe1eb;
+    margin-top: 6px;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.meter {
+    border-radius: 20px;
+    transition: all 1s;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 10%;
+    height: 100%;
+}
+
+.meterAbove {
+    position: absolute;
+    top:-50px;
+    height: 100%;
+    right: 10px;
+}
+
+.active {
+    display: flex;
+    position: relative;
+    padding: 12px;
+    color: white;
+    justify-content: center;
+    background-color: #19283f;
+    border-radius: 10px;
+}
+
+.airIcon {
+    color:#19283f;
+    position: absolute;
+    bottom:-25px;
+    font-size: 50px;
+}
+
+
+
+.today {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tempToday {
+    display: flex;
+    flex-direction: column;
+}
+
+.tempToday h2{
+    font-size: 40px;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.innerForecast {
+    display: flex;
+    border-right: 2px solid #ebeef3;
+    height: 220px;
+    padding: 0px 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.innerForecast:last-child {
+    border-right: none;
+}
+
+
+
+.outerCircle {
+    border: 2px solid #edeff2;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.innerForecast h1{
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
