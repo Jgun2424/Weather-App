@@ -28,7 +28,7 @@ export default function App() {
   }
   async function fetchData() {
     if (!localStorage.getItem('location')) setDefault();
-    await fetch(`http://api.waqi.info/feed/${localStorage.getItem('location').split(',')[0]}/?token=03acbd9dc8b4d429862c7da20490dc21ab564f21`)
+    await fetch(`https://api.waqi.info/feed/${localStorage.getItem('location').split(',')[0]}/?token=03acbd9dc8b4d429862c7da20490dc21ab564f21`)
     .then(res => res.json())
     .then(data => {
       if (data.status === "error") return setAqi('-')
